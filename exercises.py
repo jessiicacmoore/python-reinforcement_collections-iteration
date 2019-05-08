@@ -3,7 +3,7 @@
 # --- Lists
 fav_colours = ['blue', 'teal', 'maroon']
 
-family_ages = [26, 22, 32, 28]
+family_ages = [26, 22, 34, 28]
 
 coin_flip = ['heads', 'tails', 'heads', 'heads', 'tails']
 
@@ -31,7 +31,7 @@ cities = {
 friend_ages = {
   'Rachel': 23,
   'Christina': 25,
-  'Alan': 29,
+  'Alan': 32,
   'Brandon':27
 }
 
@@ -101,5 +101,26 @@ print(movies)
 
 
 
+# ---------- EXERCISE FOUR ---------
 
+# Print out all of the ages of your friends/family that are less than 30 (or any number where some ages will not be printed!).
+for name, age in friend_ages.items():
+  if age > 30:
+    print(f"{name} is {age}")
+  else:
+    print(f"{name} is not 30")
+
+# Find and output the age of the oldest person in your friends/family list.
+print(family_ages[0])
+
+# Count how many times you flipped 'heads' using the coin flips list.
+print(coin_flip.count('heads'))
+
+# You realize one of the performing artists in your list is no longer a favourite. Remove one of them from the list.
+fave_bands.pop(1)
+print(fave_bands)
+
+# Pick a city in your city population dictionary and change its population.
+cities['Brooklyn'] = 2.75
+print(cities)
 
