@@ -3,7 +3,7 @@
 # --- Lists
 fav_colours = ['blue', 'teal', 'maroon']
 
-ages = [26, 23, 25, 29]
+family_ages = [26, 22, 32, 28]
 
 coin_flip = ['heads', 'tails', 'heads', 'heads', 'tails']
 
@@ -28,7 +28,7 @@ cities = {
   'Barcelona': 1.61
 }
 
-name_age = {
+friend_ages = {
   'Rachel': 23,
   'Christina': 25,
   'Alan': 29,
@@ -38,3 +38,10 @@ name_age = {
 # ---------- EXERCISE ONE ---------
 
 print(coin_flip)
+
+print(fav_colours[0])
+
+family_ages.append(0)
+# print(family_ages)
+
+print(movies['The Conjuring'])
