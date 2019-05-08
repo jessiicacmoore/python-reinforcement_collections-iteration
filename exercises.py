@@ -161,12 +161,12 @@ print(fav_colours)
 # Make a new dictionary that contains a list of movies for each year. Each list of movies should be a list. Below is some data you can use.
 movies_by_year = {
   1999 : ['The Matrix', 'Star Wars: Episode 1', 'The Mummy'],
-  2009 : ['Avatar', 'Star Trek', 'District 9']
+  2009 : ['Avatar', 'Star Trek', 'District 9'],
   2019 : ['How to Train Your Dragon 3', 'Toy Story 4', 'Star Wars: Episode 9']
 }
 
 # Make a new list that contains each row of the buttons on a phone. Each row should be a list.
-phone_buttons [
+phone_buttons = [
   [1,2,3],
   [4,5,6],
   [7,8,9],
@@ -174,9 +174,55 @@ phone_buttons [
 ]
 
 # Make a new list that contains information about three countries. Each country should be a dictionary that has a name, a continent, and whether or not it is an island.
-countries [
-  {'name': 'Canada', 'continent': 'North America', 'island': 'no'},
-  {'name': 'France', 'continent': 'Europe', 'island': 'no'},
-  {'name': 'New Zealand', 'continent': 'Oceania', 'island': 'yes'}
+countries = [
+  {'name': 'Canada', 'continent': 'North America', 'island': False},
+  {'name': 'France', 'continent': 'Europe', 'island': False},
+  {'name': 'New Zealand', 'continent': 'Oceania', 'island': True}
 ]
 
+# ---------- EXERCISE SEVEN ---------
+
+# Output the message "I will not skateboard in the halls" 20 times.
+for i in range(20):
+  print("I will not skateboard in the halls")
+
+# Create a list consisting of the above message. It should appear in the list 20 times.
+lines = []
+
+for i in range(20):
+  lines.append('I will not skateboard in the halls')
+
+print(lines)
+print(len(lines))
+
+# Create a list consisting of the numbers between 1 and 50.
+
+number_list = []
+
+for i in range(50):
+  number = len(number_list) + 1
+  number_list.append(number)
+
+print(number_list)
+
+# Make a new list out all of the countries from the dictionary in Exercise 6 that are not islands. Print out both lists.
+not_island_countries = []
+
+for country in countries:
+  if country['island'] == False:
+    not_island_countries.append(country)
+
+print(not_island_countries)
+
+
+
+# ---------- EXERCISE EIGHT ---------
+# You want to add up your expenses for the year. Create a list of numbers 
+def calc_expense(expenses):
+  return sum(expenses)
+
+expenses2018 = [25.76, 50.00, 12.35, 6.25]
+expenses2019 = [56.76, 78.10, 2.25]
+
+print("${:.2f}".format(calc_expense(expenses2018)))
+print("${:.2f}".format(calc_expense(expenses2019)))
