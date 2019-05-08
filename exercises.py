@@ -124,3 +124,34 @@ print(fave_bands)
 cities['Brooklyn'] = 2.75
 print(cities)
 
+# ---------- EXERCISE FIVE ---------
+
+# Find the sum total of the population in the dictionary of cities.
+total_population = 0
+
+for city, pop in cities.items():
+  total_population += pop
+
+print(total_population)
+
+# Using your dictionary containing the names of your family and friends with their ages, print out one of two messages for each depending on their age. For example:
+for name, age in friend_ages.items():
+  if age > 25:
+    print(f"{name} is {age}, therefore they're old")
+  else:
+    print(f"{name} is {age}, therefore they're young")
+
+# Print out the last two colours in your list of favourite colours.
+print(fav_colours[-1] + ", " + fav_colours[-2])
+
+# Increase by 1 the age of everyone in your list of ages. Print it out.
+for name, age in friend_ages.items():
+  age += 1
+  print(f"{name} is now {age}")
+
+# Add two new colours to your list of favourite colours.
+fav_colours.append('yellow')
+fav_colours.append('emerald')
+print(fav_colours)
+
+
