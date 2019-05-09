@@ -28,3 +28,39 @@ print_alpha_list()
 sorted_grocery_list.pop(sorted_grocery_list.index('salmon'))
 
 print_alpha_list()
+
+
+
+# ---------- EXERCISE TEN ---------
+students = {
+  'cohort1': 34,
+  'cohort2': 42,
+  'cohort3': 22
+}
+
+def print_students(i):
+  for cohort, class_size in i.items():
+    print(f'{cohort}: {class_size}')
+
+print_students(students)
+
+students['cohort4'] = 43
+
+print(students.keys())
+print_students(students)
+
+new_students = {}
+
+for cohort, class_size in students.items():
+  new_students[cohort] = int(class_size*1.05)
+
+print_students(new_students)
+
+student_sum = 0
+
+for cohort, class_size in new_students.items():
+  student_sum += class_size
+
+print(student_sum)
+
+
